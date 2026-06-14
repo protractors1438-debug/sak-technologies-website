@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter, Outfit } from "next/font/google";
+import { Inter, Space_Grotesk } from "next/font/google";
 import "./globals.css";
 
 const inter = Inter({
@@ -8,16 +8,16 @@ const inter = Inter({
   display: "swap",
 });
 
-const outfit = Outfit({
-  variable: "--font-outfit",
+const spaceGrotesk = Space_Grotesk({
+  variable: "--font-space-grotesk",
   subsets: ["latin"],
   display: "swap",
 });
 
 export const metadata: Metadata = {
-  title: "SAK Technologies | Engineering Digital Experiences Beyond Gravity",
+  title: "SAK Technologies | Premium Web Development & Digital Engineering Studio",
   description:
-    "SAK Technologies builds high-performance websites, web applications, and digital platforms that help businesses scale faster in the modern world. Premium web development, UI/UX design, and digital solutions.",
+    "SAK Technologies builds high-performance websites, web applications, and digital platforms. A premium creative engineering studio designing custom web solutions for modern businesses.",
   keywords: [
     "web development",
     "digital solutions",
@@ -27,9 +27,10 @@ export const metadata: Metadata = {
     "custom website development",
     "e-commerce",
     "SEO optimization",
+    "creative technology",
   ],
   openGraph: {
-    title: "SAK Technologies | Engineering Digital Experiences Beyond Gravity",
+    title: "SAK Technologies | Premium Web Development & Digital Engineering Studio",
     description:
       "Premium web development and digital solutions. Building high-performance websites and applications that help businesses scale.",
     type: "website",
@@ -48,7 +49,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${inter.variable} ${outfit.variable} antialiased`}
+      className={`${inter.variable} ${spaceGrotesk.variable} antialiased`}
     >
       <body className="min-h-screen bg-bg-primary text-text-primary font-[family-name:var(--font-inter)]">
         {children}

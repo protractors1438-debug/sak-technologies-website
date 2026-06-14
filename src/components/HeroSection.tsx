@@ -8,7 +8,7 @@ const HeroScene = dynamic(() => import("./HeroScene"), {
   ssr: false,
   loading: () => (
     <div className="w-full h-full flex items-center justify-center">
-      <div className="w-12 h-12 border-4 border-accent-blue/20 border-t-accent-blue rounded-full animate-spin"></div>
+      <div className="w-12 h-12 border-4 border-accent-orange/20 border-t-accent-orange rounded-full animate-spin"></div>
     </div>
   ),
 });
@@ -25,8 +25,8 @@ export default function HeroSection() {
   return (
     <section className="relative min-h-screen flex flex-col items-center justify-center pt-20 overflow-hidden bg-bg-primary">
       {/* Ambient background glows */}
-      <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-accent-blue/10 rounded-full blur-[100px] pointer-events-none"></div>
-      <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-accent-purple/10 rounded-full blur-[100px] pointer-events-none"></div>
+      <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-accent-orange/10 rounded-full blur-[100px] pointer-events-none"></div>
+      <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-accent-amber/10 rounded-full blur-[100px] pointer-events-none"></div>
 
       {/* Floating particles background */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
@@ -49,27 +49,23 @@ export default function HeroSection() {
 
       {/* Main Content */}
       <div className="relative z-10 w-full max-w-4xl mx-auto px-6 text-center mt-10">
-
-
         <motion.h1
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.1 }}
-          className="text-5xl md:text-6xl lg:text-7xl font-bold font-[family-name:var(--font-outfit)] mb-6 leading-tight"
+          className="text-5xl md:text-6xl lg:text-7xl font-bold font-[family-name:var(--font-space-grotesk)] mb-6 leading-tight"
         >
-          Engineering Digital Experiences{" "}
-          <span className="gradient-text">Beyond Gravity.</span>
+          Engineering{" "}
+          <span className="gradient-text">Digital Experiences.</span>
         </motion.h1>
 
         <motion.p
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.2 }}
-          className="text-text-secondary text-lg md:text-xl max-w-2xl mx-auto mb-10"
+          className="text-text-secondary text-lg md:text-xl max-w-2xl mx-auto mb-10 font-medium"
         >
-          SAK Technologies builds high-performance websites, web applications,
-          and digital platforms that help businesses scale faster in the modern
-          world.
+          We build websites, applications, and digital systems that help businesses grow online.
         </motion.p>
 
         <motion.div
@@ -90,8 +86,8 @@ export default function HeroSection() {
       {/* Decorative floating UI elements */}
       <div className="absolute top-1/3 right-[5%] hidden lg:block animate-float-gentle" style={{ animationDelay: '0s' }}>
         <div className="glass-card p-4 rounded-xl flex items-center gap-3">
-          <div className="w-8 h-8 rounded bg-accent-blue/20 flex items-center justify-center">
-            <svg className="w-4 h-4 text-accent-blue" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <div className="w-8 h-8 rounded bg-accent-orange/20 flex items-center justify-center">
+            <svg className="w-4 h-4 text-accent-orange" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
             </svg>
           </div>
@@ -104,9 +100,9 @@ export default function HeroSection() {
 
       <div className="absolute bottom-1/4 left-[5%] hidden lg:block animate-float-gentle" style={{ animationDelay: '-3s' }}>
         <div className="glass-card p-4 rounded-xl flex items-end gap-2 h-24">
-          <div className="w-3 bg-accent-purple/40 rounded-t h-full"></div>
-          <div className="w-3 bg-accent-cyan/60 rounded-t h-2/3"></div>
-          <div className="w-3 bg-accent-blue rounded-t h-4/5 glow-blue"></div>
+          <div className="w-3 bg-accent-gold/40 rounded-t h-full"></div>
+          <div className="w-3 bg-accent-amber/60 rounded-t h-2/3"></div>
+          <div className="w-3 bg-accent-orange rounded-t h-4/5 glow-orange"></div>
         </div>
       </div>
 
@@ -128,7 +124,7 @@ export default function HeroSection() {
           <motion.div
             animate={{ y: [0, 12, 0] }}
             transition={{ duration: 1.5, repeat: Infinity }}
-            className="w-1 h-2 bg-accent-cyan rounded-full"
+            className="w-1 h-2 bg-accent-orange rounded-full"
           />
         </div>
       </motion.div>

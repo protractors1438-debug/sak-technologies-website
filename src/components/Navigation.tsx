@@ -61,7 +61,7 @@ export default function Navigation() {
               <button
                 key={link.name}
                 onClick={() => scrollToSection(link.id)}
-                className="text-text-secondary hover:text-accent-blue transition-colors text-sm font-medium tracking-wide font-[family-name:var(--font-outfit)]"
+                className="text-text-secondary hover:text-accent-orange transition-colors text-sm font-semibold tracking-wide font-[family-name:var(--font-space-grotesk)]"
               >
                 {link.name}
               </button>
@@ -119,7 +119,7 @@ export default function Navigation() {
               <button
                 key={link.name}
                 onClick={() => scrollToSection(link.id)}
-                className="text-left text-text-primary py-3 border-b border-white/5 font-[family-name:var(--font-outfit)] text-lg"
+                className="text-left text-text-primary py-3 border-b border-white/5 font-[family-name:var(--font-space-grotesk)] text-lg"
               >
                 {link.name}
               </button>

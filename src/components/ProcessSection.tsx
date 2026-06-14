@@ -63,7 +63,7 @@ export default function ProcessSection() {
   return (
     <section id="process" className="section-padding relative overflow-hidden bg-bg-secondary">
       <div className="absolute inset-0 bg-grid opacity-20 pointer-events-none"></div>
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-[800px] bg-radial-glow-purple pointer-events-none opacity-40"></div>
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-[800px] bg-radial-glow-purple pointer-events-none opacity-30"></div>
 
       <div className="relative z-10 max-w-7xl mx-auto">
         <div className="text-center mb-16 md:mb-24">
@@ -71,7 +71,7 @@ export default function ProcessSection() {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-100px" }}
-            className="text-accent-purple text-sm uppercase tracking-widest font-semibold mb-4"
+            className="text-accent-orange text-sm uppercase tracking-widest font-bold mb-4"
           >
             How We Work
           </motion.p>
@@ -80,15 +80,13 @@ export default function ProcessSection() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-100px" }}
             transition={{ delay: 0.1 }}
-            className="text-4xl md:text-5xl font-bold font-[family-name:var(--font-outfit)] gradient-text-purple"
+            className="text-4xl md:text-5xl font-bold font-[family-name:var(--font-space-grotesk)] gradient-text"
           >
             From Vision to Launch
           </motion.h2>
         </div>
 
         <div className="relative">
-
-
           <div className="grid grid-cols-1 lg:grid-cols-6 gap-8 lg:gap-4 relative">
             {steps.map((step, index) => (
               <motion.div
@@ -100,12 +98,12 @@ export default function ProcessSection() {
                 className="relative flex lg:flex-col items-start lg:items-center gap-6 lg:gap-8 group"
               >
                 {/* Station Node */}
-                <div className="relative z-10 flex-shrink-0 w-16 h-16 rounded-full glass flex items-center justify-center border border-white/20 group-hover:border-accent-blue transition-colors duration-300 shadow-[0_0_15px_rgba(0,0,0,0.5)] group-hover:shadow-[0_0_25px_rgba(0,212,255,0.3)] bg-bg-secondary">
-                  <div className="text-white/80 group-hover:text-accent-blue transition-colors duration-300">
+                <div className="relative z-10 flex-shrink-0 w-16 h-16 rounded-full glass flex items-center justify-center border border-white/20 group-hover:border-accent-orange transition-colors duration-300 shadow-[0_0_15px_rgba(0,0,0,0.5)] group-hover:shadow-[0_0_25px_rgba(255,107,53,0.25)] bg-bg-secondary">
+                  <div className="text-white/80 group-hover:text-accent-orange transition-colors duration-300">
                     {step.icon}
                   </div>
                   {/* Number Badge */}
-                  <div className="absolute -top-1 -right-1 w-6 h-6 rounded-full bg-gradient-to-br from-accent-blue to-accent-purple text-white text-xs font-bold flex items-center justify-center shadow-lg">
+                  <div className="absolute -top-1 -right-1 w-6 h-6 rounded-full bg-gradient-to-br from-accent-orange to-accent-gold text-bg-primary text-xs font-bold flex items-center justify-center shadow-lg">
                     {index + 1}
                   </div>
                 </div>
@@ -114,13 +112,13 @@ export default function ProcessSection() {
                 {index < steps.length - 1 && (
                   <>
                     {/* Desktop Arrow */}
-                    <div className="hidden lg:flex absolute top-8 -right-4 w-8 justify-center items-center text-accent-cyan/50 translate-x-1/2 -translate-y-1/2 z-0">
+                    <div className="hidden lg:flex absolute top-8 -right-4 w-8 justify-center items-center text-accent-orange/40 translate-x-1/2 -translate-y-1/2 z-0">
                       <svg className="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
                       </svg>
                     </div>
                     {/* Mobile Arrow */}
-                    <div className="lg:hidden absolute top-[100%] left-8 h-8 flex justify-center items-center text-accent-cyan/50 -translate-x-1/2 -translate-y-1/2 z-0">
+                    <div className="lg:hidden absolute top-[100%] left-8 h-8 flex justify-center items-center text-accent-orange/40 -translate-x-1/2 -translate-y-1/2 z-0">
                       <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
                       </svg>
@@ -130,10 +128,10 @@ export default function ProcessSection() {
 
                 {/* Content Card */}
                 <div className="glass-card p-5 rounded-2xl flex-grow lg:text-center w-full group-hover:translate-y-[-4px] transition-transform duration-300 mt-2 lg:mt-0">
-                  <h3 className="text-lg font-semibold font-[family-name:var(--font-outfit)] mb-2 group-hover:text-accent-blue transition-colors">
+                  <h3 className="text-lg font-semibold font-[family-name:var(--font-space-grotesk)] mb-2 group-hover:text-accent-orange transition-colors">
                     {step.title}
                   </h3>
-                  <p className="text-text-secondary text-sm leading-relaxed">
+                  <p className="text-text-secondary text-sm leading-relaxed font-medium">
                     {step.description}
                   </p>
                 </div>

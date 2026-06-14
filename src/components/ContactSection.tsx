@@ -113,7 +113,7 @@ Please contact me regarding my project.`;
   return (
     <section id="contact" className="section-padding relative overflow-hidden bg-bg-primary z-10">
       <div className="absolute inset-0 bg-grid opacity-30 pointer-events-none"></div>
-      <div className="absolute top-1/2 left-3/4 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-radial-glow pointer-events-none opacity-50"></div>
+      <div className="absolute top-1/2 left-3/4 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-radial-glow pointer-events-none opacity-40"></div>
 
       <div className="relative z-10 max-w-7xl mx-auto">
         <div className="text-center mb-16 md:mb-24">
@@ -121,7 +121,7 @@ Please contact me regarding my project.`;
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-100px" }}
-            className="text-accent-blue text-sm uppercase tracking-widest font-semibold mb-4"
+            className="text-accent-orange text-sm uppercase tracking-widest font-bold mb-4"
           >
             Get In Touch
           </motion.p>
@@ -130,7 +130,7 @@ Please contact me regarding my project.`;
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-100px" }}
             transition={{ delay: 0.1 }}
-            className="text-4xl md:text-5xl font-bold font-[family-name:var(--font-outfit)] gradient-text"
+            className="text-4xl md:text-5xl font-bold font-[family-name:var(--font-space-grotesk)] gradient-text"
           >
             Let&apos;s Build Something Extraordinary.
           </motion.h2>
@@ -144,35 +144,35 @@ Please contact me regarding my project.`;
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.6 }}
           >
-            <h3 className="text-3xl font-bold font-[family-name:var(--font-outfit)] mb-6 text-white">
+            <h3 className="text-3xl font-bold font-[family-name:var(--font-space-grotesk)] mb-6 text-white leading-tight">
               Ready to elevate your digital presence?
             </h3>
-            <p className="text-text-secondary text-lg mb-10 leading-relaxed">
+            <p className="text-text-secondary text-lg mb-10 leading-relaxed font-medium">
               Whether you need a cutting-edge web application, a high-converting e-commerce platform, or a complete digital transformation, our team of experts is ready to turn your vision into reality.
             </p>
 
             <div className="space-y-8 mb-10">
               <div className="flex items-start gap-4">
-                <div className="w-12 h-12 rounded-xl bg-white/5 flex items-center justify-center flex-shrink-0 text-accent-blue border border-white/10">
+                <div className="w-12 h-12 rounded-xl bg-white/5 flex items-center justify-center flex-shrink-0 text-accent-orange border border-white/10 shadow-lg">
                   <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                   </svg>
                 </div>
                 <div>
-                  <h4 className="text-sm text-text-tertiary uppercase tracking-wider font-semibold mb-1">Email Us</h4>
-                  <a href="mailto:hello@saktechnologies.com" className="text-lg font-medium text-white hover:text-accent-blue transition-colors">hello@saktechnologies.com</a>
+                  <h4 className="text-sm text-text-tertiary uppercase tracking-wider font-bold mb-1">Email Us</h4>
+                  <a href="mailto:hello@saktechnologies.com" className="text-lg font-medium text-white hover:text-accent-orange transition-colors">hello@saktechnologies.com</a>
                 </div>
               </div>
 
               <div className="flex items-start gap-4">
-                <div className="w-12 h-12 rounded-xl bg-white/5 flex items-center justify-center flex-shrink-0 text-accent-purple border border-white/10">
+                <div className="w-12 h-12 rounded-xl bg-white/5 flex items-center justify-center flex-shrink-0 text-accent-amber border border-white/10 shadow-lg">
                   <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                   </svg>
                 </div>
                 <div>
-                  <h4 className="text-sm text-text-tertiary uppercase tracking-wider font-semibold mb-1">Location</h4>
+                  <h4 className="text-sm text-text-tertiary uppercase tracking-wider font-bold mb-1">Location</h4>
                   <p className="text-lg font-medium text-white">Digital-First, Global Reach</p>
                 </div>
               </div>
@@ -188,7 +188,7 @@ Please contact me regarding my project.`;
           >
             <div className="glass-strong rounded-3xl p-8 md:p-10 relative overflow-hidden">
               {/* Form background glow */}
-              <div className="absolute top-0 right-0 w-64 h-64 bg-accent-blue/10 rounded-full blur-[80px] pointer-events-none"></div>
+              <div className="absolute top-0 right-0 w-64 h-64 bg-accent-orange/5 rounded-full blur-[80px] pointer-events-none"></div>
 
               <AnimatePresence mode="wait">
                 {isSuccess ? (
@@ -204,9 +204,9 @@ Please contact me regarding my project.`;
                       initial={{ scale: 0 }}
                       animate={{ scale: 1 }}
                       transition={{ delay: 0.2, type: "spring", stiffness: 200 }}
-                      className="w-24 h-24 bg-gradient-to-br from-green-400 to-emerald-600 rounded-full flex items-center justify-center mb-8 shadow-[0_0_40px_rgba(52,211,153,0.4)]"
+                      className="w-24 h-24 bg-gradient-to-br from-accent-orange to-accent-gold rounded-full flex items-center justify-center mb-8 shadow-[0_0_40px_rgba(255,107,53,0.4)]"
                     >
-                      <svg className="w-12 h-12 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <svg className="w-12 h-12 text-[#080808]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <motion.path 
                           initial={{ pathLength: 0 }}
                           animate={{ pathLength: 1 }}
@@ -218,7 +218,7 @@ Please contact me regarding my project.`;
                         />
                       </svg>
                     </motion.div>
-                    <h3 className="text-3xl font-bold font-[family-name:var(--font-outfit)] text-white mb-4">Lead Secured!</h3>
+                    <h3 className="text-3xl font-bold font-[family-name:var(--font-space-grotesk)] text-white mb-4">Lead Secured!</h3>
                     <p className="text-text-secondary text-lg mb-8 max-w-[280px]">
                       Thank you for contacting SAK Technologies. Redirecting you to WhatsApp...
                     </p>
@@ -229,7 +229,7 @@ Please contact me regarding my project.`;
                         initial={{ width: "0%" }}
                         animate={{ width: "100%" }}
                         transition={{ duration: 3, ease: "linear" }}
-                        className="h-full bg-gradient-to-r from-accent-blue to-accent-cyan"
+                        className="h-full bg-gradient-to-r from-accent-orange to-accent-amber"
                       />
                     </div>
                   </motion.div>
@@ -259,32 +259,32 @@ Please contact me regarding my project.`;
 
                       <div className="grid grid-cols-1 gap-6 mb-6">
                         <motion.div variants={itemVariants} className="flex flex-col gap-2">
-                          <label htmlFor="name" className="text-sm font-medium text-text-secondary ml-1">Full Name *</label>
-                          <input type="text" id="name" value={formData.name} onChange={handleInputChange} required placeholder="John Doe" className="bg-white/5 border border-white/10 rounded-xl px-4 py-3 focus:outline-none focus:border-accent-blue focus:ring-1 focus:ring-accent-blue/50 transition-all text-white placeholder-text-tertiary" />
+                          <label htmlFor="name" className="text-sm font-semibold text-text-secondary ml-1">Full Name *</label>
+                          <input type="text" id="name" value={formData.name} onChange={handleInputChange} required placeholder="John Doe" className="bg-white/5 border border-white/10 rounded-xl px-4 py-3 focus:outline-none focus:border-accent-orange focus:ring-1 focus:ring-accent-orange/50 transition-all text-white placeholder-text-tertiary" />
                         </motion.div>
                       </div>
 
                       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
                         <motion.div variants={itemVariants} className="flex flex-col gap-2">
-                          <label htmlFor="email" className="text-sm font-medium text-text-secondary ml-1">Email Address *</label>
-                          <input type="email" id="email" value={formData.email} onChange={handleInputChange} required placeholder="john@example.com" className="bg-white/5 border border-white/10 rounded-xl px-4 py-3 focus:outline-none focus:border-accent-blue focus:ring-1 focus:ring-accent-blue/50 transition-all text-white placeholder-text-tertiary" />
+                          <label htmlFor="email" className="text-sm font-semibold text-text-secondary ml-1">Email Address *</label>
+                          <input type="email" id="email" value={formData.email} onChange={handleInputChange} required placeholder="john@example.com" className="bg-white/5 border border-white/10 rounded-xl px-4 py-3 focus:outline-none focus:border-accent-orange focus:ring-1 focus:ring-accent-orange/50 transition-all text-white placeholder-text-tertiary" />
                         </motion.div>
                         
                         <motion.div variants={itemVariants} className="flex flex-col gap-2">
-                          <label htmlFor="phone" className="text-sm font-medium text-text-secondary ml-1">Phone Number *</label>
-                          <input type="tel" id="phone" value={formData.phone} onChange={handleInputChange} required placeholder="+1 234 567 8900" className="bg-white/5 border border-white/10 rounded-xl px-4 py-3 focus:outline-none focus:border-accent-blue focus:ring-1 focus:ring-accent-blue/50 transition-all text-white placeholder-text-tertiary" />
+                          <label htmlFor="phone" className="text-sm font-semibold text-text-secondary ml-1">Phone Number *</label>
+                          <input type="tel" id="phone" value={formData.phone} onChange={handleInputChange} required placeholder="+1 234 567 8900" className="bg-white/5 border border-white/10 rounded-xl px-4 py-3 focus:outline-none focus:border-accent-orange focus:ring-1 focus:ring-accent-orange/50 transition-all text-white placeholder-text-tertiary" />
                         </motion.div>
                       </div>
 
                       <motion.div variants={itemVariants} className="flex flex-col gap-2 mb-6">
-                        <label htmlFor="company" className="text-sm font-medium text-text-secondary ml-1">Company Name (Optional)</label>
-                        <input type="text" id="company" value={formData.company} onChange={handleInputChange} placeholder="Your Company Ltd." className="bg-white/5 border border-white/10 rounded-xl px-4 py-3 focus:outline-none focus:border-accent-blue focus:ring-1 focus:ring-accent-blue/50 transition-all text-white placeholder-text-tertiary" />
+                        <label htmlFor="company" className="text-sm font-semibold text-text-secondary ml-1">Company Name (Optional)</label>
+                        <input type="text" id="company" value={formData.company} onChange={handleInputChange} placeholder="Your Company Ltd." className="bg-white/5 border border-white/10 rounded-xl px-4 py-3 focus:outline-none focus:border-accent-orange focus:ring-1 focus:ring-accent-orange/50 transition-all text-white placeholder-text-tertiary" />
                       </motion.div>
 
                       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
                         <motion.div variants={itemVariants} className="flex flex-col gap-2">
-                          <label htmlFor="service" className="text-sm font-medium text-text-secondary ml-1">Service Required *</label>
-                          <select id="service" value={formData.service} onChange={handleInputChange} className="bg-white/5 border border-white/10 rounded-xl px-4 py-3 focus:outline-none focus:border-accent-blue focus:ring-1 focus:ring-accent-blue/50 transition-all text-white appearance-none [&>option]:bg-bg-primary">
+                          <label htmlFor="service" className="text-sm font-semibold text-text-secondary ml-1">Service Required *</label>
+                          <select id="service" value={formData.service} onChange={handleInputChange} className="bg-white/5 border border-white/10 rounded-xl px-4 py-3 focus:outline-none focus:border-accent-orange focus:ring-1 focus:ring-accent-orange/50 transition-all text-white appearance-none [&>option]:bg-bg-primary">
                             <option value="Website Development">Website Development</option>
                             <option value="Web Application">Web Application</option>
                             <option value="E-Commerce">E-Commerce</option>
@@ -295,8 +295,8 @@ Please contact me regarding my project.`;
                         </motion.div>
 
                         <motion.div variants={itemVariants} className="flex flex-col gap-2">
-                          <label htmlFor="budget" className="text-sm font-medium text-text-secondary ml-1">Budget Range (Optional)</label>
-                          <select id="budget" value={formData.budget} onChange={handleInputChange} className="bg-white/5 border border-white/10 rounded-xl px-4 py-3 focus:outline-none focus:border-accent-blue focus:ring-1 focus:ring-accent-blue/50 transition-all text-white appearance-none [&>option]:bg-bg-primary">
+                          <label htmlFor="budget" className="text-sm font-semibold text-text-secondary ml-1">Budget Range (Optional)</label>
+                          <select id="budget" value={formData.budget} onChange={handleInputChange} className="bg-white/5 border border-white/10 rounded-xl px-4 py-3 focus:outline-none focus:border-accent-orange focus:ring-1 focus:ring-accent-orange/50 transition-all text-white appearance-none [&>option]:bg-bg-primary">
                             <option value="Not Sure Yet">Not Sure Yet</option>
                             <option value="5k-10k">$5k - $10k</option>
                             <option value="10k-25k">$10k - $25k</option>
@@ -307,8 +307,8 @@ Please contact me regarding my project.`;
                       </div>
 
                       <motion.div variants={itemVariants} className="flex flex-col gap-2 mb-8">
-                        <label htmlFor="message" className="text-sm font-medium text-text-secondary ml-1">Project Description *</label>
-                        <textarea id="message" value={formData.message} onChange={handleInputChange} required rows={4} placeholder="Tell us about your project goals..." className="bg-white/5 border border-white/10 rounded-xl px-4 py-3 focus:outline-none focus:border-accent-blue focus:ring-1 focus:ring-accent-blue/50 transition-all text-white placeholder-text-tertiary resize-none"></textarea>
+                        <label htmlFor="message" className="text-sm font-semibold text-text-secondary ml-1">Project Description *</label>
+                        <textarea id="message" value={formData.message} onChange={handleInputChange} required rows={4} placeholder="Tell us about your project goals..." className="bg-white/5 border border-white/10 rounded-xl px-4 py-3 focus:outline-none focus:border-accent-orange focus:ring-1 focus:ring-accent-orange/50 transition-all text-white placeholder-text-tertiary resize-none font-medium"></textarea>
                       </motion.div>
 
                       <motion.button 
@@ -320,7 +320,7 @@ Please contact me regarding my project.`;
                         <span className="relative z-10 flex items-center justify-center gap-2">
                           {isSubmitting ? (
                             <>
-                              <svg className="animate-spin -ml-1 mr-3 h-5 w-5 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                              <svg className="animate-spin -ml-1 mr-3 h-5 w-5 text-[#080808]" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
                                 <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
                                 <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
                               </svg>
